@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.user.TicTacToe.MainActivity">
+
+
+    <android.support.v7.widget.GridLayout
+
+
+        android:id="@+id/gridLayout"
+        android:layout_width="363dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="tapped"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+
+            android:onClick="tapped"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+
+            android:onClick="tapped"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+
+            android:onClick="tapped"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+
+            android:onClick="tapped"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+
+            android:onClick="tapped"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+
+            android:onClick="tapped"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+
+            android:onClick="tapped"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+
+            android:onClick="tapped"
+            android:tag="8" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <TextView
+        android:id="@+id/winnerNameText"
+        android:layout_width="318dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="TextView"
+        android:textColor="#d90f37"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="#ffc0cb"
+        android:includeFontPadding="false"
+        android:onClick="playAgain"
+        android:text="Main Lagi"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+</android.support.constraint.ConstraintLayout>
