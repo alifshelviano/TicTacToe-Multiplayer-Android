@@ -16,7 +16,7 @@ import com.example.user.connect3.R;
 public class MainActivity extends AppCompatActivity {
 
     //0 = yellow, 1 = red
-
+    private long pressedTime;
     int player = 1;
 
     int[] gameState = {0,0,0,0,0,0,0,0,0};
@@ -129,6 +129,17 @@ public class MainActivity extends AppCompatActivity {
         active=true;
 
 
+    }
+    @Override
+    public void onBackPressed() {
+
+        if (pressedTime + 2000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            android.os.Process.killProcess(android.os.Process.myPid());
+        } else {
+            Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        pressedTime = System.currentTimeMillis();
     }
 
 
