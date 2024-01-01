@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
                     active = false;
                     String winner = "";
                     if (player == 1)
-                        winner = "player 2";
+                        winner = "X";
                     else
-                        winner = "player 1";
+                        winner = "0";
 
                     //player menang
 
