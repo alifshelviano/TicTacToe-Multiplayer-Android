@@ -136,15 +136,15 @@
 
     <TextView
         android:id="@+id/winnerNameText"
-        android:layout_width="318dp"
-        android:layout_height="66dp"
+        android:layout_width="246dp"
+        android:layout_height="58dp"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:text="TextView"
-        android:textColor="#d90f37"
+        android:textColor="#029E36"
         android:textColorHint="@android:color/holo_red_light"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -152,7 +152,7 @@
 
         app:fontFamily="serif"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -177,8 +177,23 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O play first"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/winnerNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
 
 
 </android.support.constraint.ConstraintLayout>

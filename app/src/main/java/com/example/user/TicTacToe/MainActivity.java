@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player == 1)
                         winner = "X";
                     else
-                        winner = "0";
+                        winner = "O";
 
                     //player menang
 
